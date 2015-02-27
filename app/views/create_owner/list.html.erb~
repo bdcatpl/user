@@ -1,0 +1,26 @@
+<div class="flat holder list">
+  <h2>Flat Holders</h2>
+  
+  <%= link_to("New Flat Holder", {:action => 'new'}, :class => 'action new') %>
+
+  <table class="listing" summary="Flat Holder list">
+    <tr class="header">
+      <th>&nbsp;</th>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Actions</th>
+    </tr>
+    <% @fs.each do |f| %>
+    <tr>
+      <td><%= f.name %></td>
+      <td><%= f.username %></td>
+      <td class="actions">
+        <%= link_to("Show", {:action => 'show', :id => f.id}, :class => 'action show') %>
+        <%= link_to("Edit", {:action => 'edit', :id => f.id}, :class => 'action edit') %>
+        <%= link_to("Delete", {:action => 'delete', :id => f.id}, :class => 'action delete') %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+

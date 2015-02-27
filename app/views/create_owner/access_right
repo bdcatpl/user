@@ -1,0 +1,8 @@
+<div class="menu">
+
+  <h2>Building Society Management System</h2>
+  <h1>Manage Access Rights</h1>
+  <h1>For Users</h1>
+  <% @create_owners.each do |f| %>
+      User<%= f.select_box_tag(:email) %>
+  <% end %>
