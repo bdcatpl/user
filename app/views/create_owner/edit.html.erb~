@@ -1,6 +1,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Housing Society Management System</title>
+
 </head>
 <%= stylesheet_link_tag "application.css" %>
 
