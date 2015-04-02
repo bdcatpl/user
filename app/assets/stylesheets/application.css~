@@ -96,6 +96,16 @@ h2 {
   background-color: #FCC;
   border: solid 1px #C66;
 }
+<<<<<<< HEAD
+=======
+form lable{
+display: block;
+margin-bottom: 2px;
+}
+form .field, form .actions{
+margin: 12px 0;
+}
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 .fieldWithErrors {
   display: inline;
 }
@@ -131,6 +141,7 @@ h2 {
 }
 
 .field_with_errors {
+<<<<<<< HEAD
   display: inline;
 }
 
@@ -138,6 +149,15 @@ h2 {
   color: #D00;
   padding-left: 5px;
   font-size: 12px;
+=======
+display: inline;
+}
+
+.field_with_errors .message {
+color: #D00;
+padding-left: 5px;
+font-size: 12px;
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 }
 label1{
     
@@ -150,7 +170,11 @@ label{
     float: left;
     clear: left;
     width: 250px;
+<<<<<<< HEAD
 
+=======
+    text-align:center;
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 }
 
 input {
@@ -171,10 +195,17 @@ margin-left:450px; margin-top:20px; margin-right:400px; margin-bottom:10px;
  border-radius:10px;
 
 
+<<<<<<< HEAD
 }
 #section5 {
 
     background-color:black;
+=======
+}#section5 {
+
+    background-color:black
+;
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
     text-color:black;
     padding:50px;
 margin-left:400px; margin-top:50px; margin-right:400px; margin-bottom:60px; 
@@ -284,6 +315,7 @@ body { width: 100%; min-width: 960px; height: 100%; margin: 0; padding: 0; }
 .center { text-align: center; }
 
 
+<<<<<<< HEAD
 .select-style {
     border: 1px solid #ccc;
     width: 120px;
@@ -293,6 +325,8 @@ body { width: 100%; min-width: 960px; height: 100%; margin: 0; padding: 0; }
 
 	
 }
+=======
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 
 
 
@@ -308,5 +342,8 @@ content h2 { color: #4C2516; }
 
 input:required:invalid, input:focus:invalid { /* insert your own styles for invalid form input */ -moz-box-shadow: none; }
 
+<<<<<<< HEAD
  *= require bootstrap-datepicker
 
+=======
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2

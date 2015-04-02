@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 <%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link') %>
 
 
@@ -7,6 +10,7 @@
   
   <%= form_for(:create_owner, :url => {:action => 'destroy', :id => @create_owner.id}) do |f| -%>
 
+<<<<<<< HEAD
     <p>Are you sure you want to permanently delete this subject?</p>
   
     <p class="reference-name"><%= @create_owner.name %></p>
@@ -14,6 +18,14 @@
     <div class="form-buttons">
       <%= submit_tag("Delete Owner") %>
     </div>
+=======
+    <h1>Are you sure you want to permanently delete this subject?</h1>
+  
+    <p class="reference-name"><%= @create_owner.name %></p>
+  
+    <%= f.submit 'Delete Owner', :class =>'form-buttons' %>
+   
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
     
   <% end %>
 

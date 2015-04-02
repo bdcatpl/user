@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <head>
 	<meta charset="UTF-8">
 	<title>Housing Society Management System</title>
@@ -20,6 +21,16 @@
               
 
 <div id="section1">
+=======
+
+<%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link') %>
+
+  <h2>New Flat Holder</h2>
+  <%= form_for(:create_owner, :url => {:action => 'create'}) do |f| %>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 <label>Name </label>  <%= f.text_field(:name) %> </br>
 <label>Floor </label>  <%= f.text_field(:floor) %></br>
 <label>Block </label>  <%= f.text_field(:block) %></br>
@@ -27,6 +38,7 @@
 <label>Business name </label>  <%= f.text_field(:business_name) %></br>
 
 <label>Username </label>  <%= f.text_field(:username) %></br>
+<<<<<<< HEAD
 <label>Password </label>  <%= password_field_tag :password %></br>
 <label> Area  as  per  builsing plan:</label> </br>
 <label>Carpet area </label>  <%= f.text_field(:carpet_area) %></br>
@@ -50,10 +62,32 @@
 <p>
     <%= f.file_field :image %>
   </p>
+=======
+<label>Password </label>  <%= f.hidden_field(:password) %></br>
+<label> Area  as  per  builsing plan:</label> </br>
+<label>Carpet area </label>  <%= f.text_field(:carpet_area) %></br>
+<label>Build up area </label>  <%= f.text_field(:buildup_area) %></br>
+<label>mezzanine</label>
+<label>Yes</label> <%= radio_button_tag(:mezzanine,"Yes") %>&nbsp;&nbsp;
+<label>No</label> <%= radio_button_tag(:mezzanine,"No")%></br>
+<label>Water connection </label> 
+<label>Common</label> <%= radio_button_tag(:water_connection,"Common") %>&nbsp;&nbsp;
+<label>Individual </label> <%= radio_button_tag(:water_connection,"Individual") %></br>
+<label>Electricity</label>
+<label>Common</label> <%= radio_button_tag(:electricity,"Common") %>&nbsp;&nbsp;
+<label>Individual </label> <%= radio_button_tag(:electricity,"Individual") %></br>
+<label>ownership</label>
+<label>Owns</label> <%= radio_button_tag(:ownership,"Owns") %>&nbsp;&nbsp;
+<label>Rented </label> <%= radio_button_tag(:ownership,"Rented") %> </br>
+<label>Month from</label> <%= f.text_field :month_from, :id => "datepicker" %></br>
+<label>Month to </label>  <%= f.text_field :month_to, :id => "datepicker" %></br>
+<label>Per month rent </label>  <%= f.text_field(:per_month_rent) %></br>
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
     
     <div class="form-buttons">
       <%= submit_tag("Create Owner") %>
     </div>
+<<<<<<< HEAD
 <script>
   $(function() {
     $( "#datepicker" ).datepicker();
@@ -69,3 +103,8 @@
   <% end %>
 </div>
 
+=======
+    
+  <% end %>
+</div>
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2

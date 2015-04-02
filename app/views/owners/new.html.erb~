@@ -1,0 +1,39 @@
+
+
+
+<div id="section2">
+ <h1 align="center" >Sign Up</h1><br></br>
+ 
+    <%=form_for Owner.new, :validate => true do |f| %>
+    <% if @owner.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @owner.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ <div class="field_with_errors">
+     <%= f.label :email %>
+     <%=f.text_field :email %><br></br>
+ </div>
+ <div class="field_with_errors">
+     <%= f.label :password %>
+     <%=f.password_field :password %><br></br>
+ </div>
+<div class="field_with_errors">
+     <%= f.label :password_confirmation %>
+     <%=f.password_field :password_comfirmation %><br></br>
+ </div>
+ 
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <%= submit_tag 'Sign Up', :class =>'form-buttons' %>
+    
+    <%end%>
+</div>
+

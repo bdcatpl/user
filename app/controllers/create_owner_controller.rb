@@ -3,7 +3,13 @@ class CreateOwnerController < ApplicationController
     list
     render('list')
   end
+<<<<<<< HEAD
   
+=======
+  def access_right
+   @create_owners = CreateOwner.order("create_owners.username ")
+  end
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
   def list
     @create_owners = CreateOwner.order("create_owners.id ASC")
   end
@@ -22,10 +28,19 @@ class CreateOwnerController < ApplicationController
     # Save the object
     if  @create_owner.save
       # If save succeeds, redirect to the list action
+<<<<<<< HEAD
       redirect_to(:action => 'list')
     else
       # If save fails, redisplay the form so user can fix problems
       render('new')
+=======
+      #flash.now.alert = "New User Created"
+      redirect_to :action => 'list' , :notice => "nwe user"
+      flash.now.alert = "New User Created!!"
+    else
+      # If save fails, redisplay the form so user can fix problems
+      redirect_to :action => 'new', :notice => "Error!!!!"
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
     end
   end
   
@@ -37,9 +52,16 @@ class CreateOwnerController < ApplicationController
     # Find object using form parameters
     @create_owner = CreateOwner.find(params[:id])
     # Update the object
+<<<<<<< HEAD
     if @create_owner.update_attributes(stud_params)
       # If update succeeds, redirect to the list action
       redirect_to(:action => 'list', :id => @create_owner.id)
+=======
+    if @create_owner.update_attributes(params[:create_owner])
+      # If update succeeds, redirect to the list action
+      redirect_to(:action => 'list', :id => @create_owner.id)
+      flash.now.alert = "User Successfully updated!!"
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
     else
       # If save fails, redisplay the form so user can fix problems
       render('edit')
@@ -47,7 +69,11 @@ class CreateOwnerController < ApplicationController
   end
   
   def delete
+<<<<<<< HEAD
     @create_owner = CreateOwner.find(params[:create_owner])
+=======
+    @create_owner = CreateOwner.find(params[:id])
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
   end
   
   def destroy
@@ -55,6 +81,7 @@ class CreateOwnerController < ApplicationController
     redirect_to(:action => 'list')
   end
 
+<<<<<<< HEAD
  # def upload
   #uploaded_io = params[:create_owner][:image]
  # File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
@@ -65,11 +92,18 @@ class CreateOwnerController < ApplicationController
   #def stud_params
       # params.require(:create_owner).permit(:name, :floor, :block, :flat_number, :business_name, :username, :password, :image, :carpet_area, :builtup_area, :mezzanine, :water_connection, :electricity, :ownership, :month_from, :month_to, :per_month_rent)
   # end
+=======
+
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
  
   def logout
      session[:create_owner_id] = nil
     flash[:notice] = "You've been logged out successfully."
+<<<<<<< HEAD
     redirect_to "/log-in"
+=======
+    redirect_to "/login"
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
   end
 
 

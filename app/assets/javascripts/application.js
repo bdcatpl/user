@@ -15,8 +15,24 @@
 //= require turbolinks
 //= require_tree .
 
+<<<<<<< HEAD
 //= require bootstrap-datepicker
 //= require bootstrap-timepicker
 
 $('.datepicker').datepicker()
+=======
+
+
+//= require bootstrap-datetimepicker
+
+$(function() {
+$( "#datepicker" ).datepicker();
+duration: "fast"
+});
+$(function() {
+$( "#datepicker1" ).datepicker();
+duration: "fast"
+});
+
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
 
