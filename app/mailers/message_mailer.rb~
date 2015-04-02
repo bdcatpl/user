@@ -1,0 +1,9 @@
+class MessageMailer < ApplicationMailer
+default :from => "mymaildiksha@gmail.com"
+  
+  def registration_confirmation(message)
+    @message = message
+    #attachments["rails.png"] = File.read("#{Rails.root}/public/images/rails.png")
+    mail(:to => "<#{message.attendee}>", :subject => "Registered")
+  end
+end
