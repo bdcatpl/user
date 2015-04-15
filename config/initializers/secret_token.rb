@@ -1,0 +1,1 @@
+User::Application.config.secret_token = '49c43a9a3a247950ab51b089b66a94f76ff79be0ea14d608365088188cbd9c756e27b8958e495a81c311addf924a2af62bb6ffcf28ef24eb8041796aff5d3d16'

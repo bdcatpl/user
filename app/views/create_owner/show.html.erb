@@ -1,0 +1,62 @@
+<%= stylesheet_link_tag "application.css" %>
+ <div id="header"><%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link') %>
+<h2>Flat Holder Details</h2></div>
+ <br></br>
+<div id="section"> 
+ <label>Name: </label>  <%= @create_owner.name %> </br>
+<label>Floor: </label>  <%= @create_owner.floor %></br>
+<label>Block: </label>  <%= @create_owner.block %></br>
+<label>Flat number: </label>  <%= @create_owner.flat_number %></br>
+<label>Business name: </label>  <%= @create_owner.business_name %></br>
+
+<label>Username: </label>  <%= @create_owner.username %></br>
+<label>Photo: </label> <%= image_tag(@create_owner.image_url, :width => 200) if @create_owner.image.present? %></br>
+<label> Area  as  per  builsing plan: </label> </br>
+<label>Carpet area: </label>  <%= @create_owner.carpet_area %></br>
+<label>Build up area: </label>  <%= @create_owner.builtup_area %></br>
+
+
+<label>mezzanine</label>
+<% if (@create_owner.mezzanine == "Yes") %>
+   Yes
+<% end %>
+<% if(@create_owner.mezzanine == "No") %>
+   No
+<% end %>
+</br>
+<label>Water connection </label> 
+<% if (@create_owner.water_connection == "Common") %>
+   Common
+<% end %>
+<% if (@create_owner.water_connection == "Individual") %>
+   Individual
+<% end %>
+</br>
+<label>Electricity</label>
+<% if (@create_owner.electricity == "Common") %>
+   Common
+<% end %>
+<% if (@create_owner.electricity == "Individual") %>
+   Individual
+<% end %>
+</br>
+<label>ownership</label>
+<% if (@create_owner.ownership == "Owns") %>
+   Owns
+<% end %>
+<% if (@create_owner.ownership == "Rented") %>
+   Rented
+<% end %>
+
+</br>
+<label>Month from: </label> <%= @create_owner.month_from %></br>
+<label>Month to: </label>  <%= @create_owner.month_to %></br>
+<label>Per month rent: </label>  <%= @create_owner.per_month_rent %></br>
+</div>
+
+</div>
+</div>
+</div>
+
+  
+

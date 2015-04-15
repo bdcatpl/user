@@ -1,0 +1,13 @@
+    <h1>Sign Up</h1>
+   <%= link_to(:sessions,{:action => 'new'}, :class => 'link') %>
+     <%= form_for(:owner, :url => {:action => 'create'}) do |f| %>
+    Email <%=f.text_field :email %>
+ 
+   Password <%=f.password_field :password %>
+    Password_confirmation <%=f.password_field :password_confirmation %>
+
+    <div class="form-buttons">
+      <%= submit_tag("Sign up") %>
+    </div>
+ 
+    <%end%>
