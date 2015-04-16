@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User</title>
+<<<<<<< HEAD
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+
+
+  <%= csrf_meta_tags %>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="javascript" href="/javascripts/datepicker_format.js">
+
+
+
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
+=======
+
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application", "rails.validations", "rails.validations.custom" %>
+  <%= csrf_meta_tags %>
+  
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+</head>
+<body class="<%= params[:controller] %>">
+  <div id="container">
+    <div id="user_nav">
+      <% if current_owner %>
+        <h0>Logged in as <%= current_owner.email %></h0>
+      <% else %>
+        WELCOME
+      <% end %>
+    </div>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+    <%= yield %>
+  </div>
+</body>
+</html>
+
+
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2

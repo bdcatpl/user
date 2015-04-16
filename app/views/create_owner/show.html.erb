@@ -3,6 +3,10 @@
 <h2>Flat Holder Details</h2></div>
  <br></br>
 <div id="section"> 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
  <label>Name: </label>  <%= @create_owner.name %> </br>
 <label>Floor: </label>  <%= @create_owner.floor %></br>
 <label>Block: </label>  <%= @create_owner.block %></br>
@@ -17,30 +21,79 @@
 
 
 <label>mezzanine</label>
+<<<<<<< HEAD
+=======
+=======
+ <label><b>Name </b></label>  <%= @create_owner.name %> <br></br>
+<label><b>Floor </b></label>  <%= @create_owner.floor %><br></br>
+<label><b>Block </b></label>  <%= @create_owner.block %><br></br>
+<label><b>Flat number </b></label>  <%= @create_owner.flat_number %><br></br>
+<label><b>Business name </b></label>  <%= @create_owner.business_name %><br></br>
+
+<label><b>Username </label>  </b><%= @create_owner.username %><br></br>
+<label><b>Photo: </label> </b><%= image_tag(@create_owner.image_url, :width => 100) if @create_owner.image.present? %><br></br>
+
+<label><b>Carpet area</b></label><%=@create_owner.carpet_area %><br></br>
+<label><b>Built up area</b></label><%= @create_owner.builtup_area %><br></br>
+
+
+<label><b>Mezzanine</b></label>
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 <% if (@create_owner.mezzanine == "Yes") %>
    Yes
 <% end %>
 <% if(@create_owner.mezzanine == "No") %>
    No
 <% end %>
+<<<<<<< HEAD
 </br>
 <label>Water connection </label> 
+=======
+<<<<<<< HEAD
+</br>
+<label>Water connection </label> 
+=======
+<br></br>
+<label><b>Water connection </b></label> 
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 <% if (@create_owner.water_connection == "Common") %>
    Common
 <% end %>
 <% if (@create_owner.water_connection == "Individual") %>
    Individual
 <% end %>
+<<<<<<< HEAD
 </br>
 <label>Electricity</label>
+=======
+<<<<<<< HEAD
+</br>
+<label>Electricity</label>
+=======
+<br></br>
+<label><b>Electricity</b></label>
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 <% if (@create_owner.electricity == "Common") %>
    Common
 <% end %>
 <% if (@create_owner.electricity == "Individual") %>
    Individual
 <% end %>
+<<<<<<< HEAD
 </br>
 <label>ownership</label>
+=======
+<<<<<<< HEAD
+</br>
+<label>ownership</label>
+=======
+<br></br>
+<label><b>Ownership</b></label>
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 <% if (@create_owner.ownership == "Owns") %>
    Owns
 <% end %>
@@ -48,10 +101,23 @@
    Rented
 <% end %>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 </br>
 <label>Month from: </label> <%= @create_owner.month_from %></br>
 <label>Month to: </label>  <%= @create_owner.month_to %></br>
 <label>Per month rent: </label>  <%= @create_owner.per_month_rent %></br>
+<<<<<<< HEAD
+=======
+=======
+<br></br>
+<label><b>Month from</b></label> <%= @create_owner.month_from %><br></br>
+<label><b>Month to </b></label>  <%= @create_owner.month_to %><br></br>
+<label><b>Per month rent </b></label>  <%= @create_owner.per_month_rent %><br></br>
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 </div>
 
 </div>

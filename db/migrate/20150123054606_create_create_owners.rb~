@@ -1,0 +1,8 @@
+class CreateCreateOwners < ActiveRecord::Migration
+  def change
+    create_table :create_owners do |t|
+
+      t.timestamps
+    end
+  end
+end

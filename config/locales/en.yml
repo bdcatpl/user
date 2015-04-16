@@ -4,7 +4,15 @@
 #
 # To use the locales, use `I18n.t`:
 #
+<<<<<<< HEAD
 #     I18n.t 'hello'
+=======
+<<<<<<< HEAD
+#     I18n.t 'hello'
+=======
+#   I18n.t 'hello'
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 #
 # In views, this is aliased to just `t`:
 #
@@ -21,3 +29,18 @@
 
 en:
   hello: "Hello world"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+en:
+  date:
+     formats:
+       default: "%d/%m/%Y" 
+  datepicker: 
+     pformat: 'DD/MM/YYYY'      # picking format of the date (this is the default, can be ommited)
+     weekstart: 0               # the week starts on Sunday (this is the default, can be ommited)
+  timepicker:  
+     pformat: 'HH:mm' 
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3

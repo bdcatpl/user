@@ -15,9 +15,13 @@ class MessageController < ApplicationController
   def new
     @message= Message.new
   end
+<<<<<<< HEAD
   def sms
      @message = Message.find(params[:id])
   end
+=======
+  
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
   def create
     # Instantiate a new object using form parameters
     @message = Message.new(params[:message])
@@ -41,6 +45,7 @@ class MessageController < ApplicationController
     end
   
   end
+<<<<<<< HEAD
 
 require "net/http"
 require "uri"
@@ -83,6 +88,8 @@ end
  redirect_to(:action => 'list')
 
   end
+=======
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
   
 =begin
  def destroy

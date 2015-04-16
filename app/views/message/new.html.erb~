@@ -1,0 +1,97 @@
+
+
+
+<h5><b><center> Building Society Management System   </center> </b></h5>
+<div id="section5">
+<div id="gateway" class="modal fade" data-backdrop="static">
+
+<%= form_for(:message, :url => {:action => 'create'}, :html => { :multipart => true }) do |f| %>
+
+
+<script type="text/javascript">
+    $('.datetimepicker').datetimepicker();
+</script>
+
+<tr><label>Project </label></tr><td>  <%= f.text_field :project %></td>
+ <br></br>
+<label>Title </label>  <%= f.text_field :title %>
+<br></br>
+<label>Place </label>  <%= f.text_field :place %>
+<br></br>
+
+<label > Start date</label> <%= f.text_field :start_date, 'data-behaviour' => 'datepicker', :size=>30,:placeholder => "Click for calender" %>
+
+
+<br></br>
+<label >End date </label> <%= f.text_field :end_date, 'data-behaviour' => 'datepicker', :size=>30,:placeholder => "Click for calender" %>
+
+<br></br>
+</div>
+<label> Start time</label>  <%= f.text_field :start_time %>
+
+<br></br>
+<label>End time </label>   <%= f.text_field :end_time %>
+
+<br></br>
+<label>Minute taker </label>  <%= f.text_field :minute_taker %>
+<br></br>
+<label>Attendee </label>  <%= f.text_field :attendee %>
+<br></br>  
+<br></br> 
+<label>About meeting </label>  <%= f.text_area :about_meeting %>
+<br></br>
+<br></br>
+<table id="maintable" width="20%" cellpadding="0" cellspacing="0" class="pdzn_tbl1" border="1px">
+<br></br>
+
+      <label>Topic</label><%= f.text_field :topic %><br></br>
+     <label>Agenda</label><%= f.select :type_o, ['Decision', 'Done', 'Info', 'Idea', 'Todo '], :selected => 'Todo' %><br></br>
+      <label>Note</label><%= f.text_field :note %><br></br>
+     <label>Owner</label><%= f.text_field :owner %><br></br>
+
+</div>
+<br></br>  
+<br></br>  
+	
+
+      <%= f.submit 'Create' %> &nbsp;
+<br></br>  
+<br></br> 
+
+<br></br>  
+<br></br> 
+
+<%= link_to 'Back',{:action=>'list'}%>
+
+
+ <script>
+ $(document).on("focus", "[data-behaviour~='datepicker']", function(e){
+    $(this).datepicker({"format": "yyyy-mm-dd", "weekStart": 1, "autoclose": true});
+});
+</script>
+ 
+
+
+  <% end %>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 <style>
 table, td, th {
     
@@ -111,7 +115,11 @@ display: block;
 }
 
 </style>
+<<<<<<< HEAD
 <h5><b> <center> Meeting list </center></b></h5>
+=======
+<h5><b> <center> Project Meeting list </center></b></h5>
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 <div id="section5">
 <br></br><%= link_to("New", {:action => 'new'}, :class => 'action new') %></l1>
  <div class="flat holder list">
@@ -124,10 +132,17 @@ display: block;
     </tr>
     <% @messages.each do |f| %>
     <tr>
+<<<<<<< HEAD
       <td><%= f.title %>&nbsp;</td>
       <td class="actions">
         <%= link_to("Show", {:action => 'show', :id => f.id}, :class => 'action show') %>
         <%= link_to("Sms", {:action => 'sms', :id => f.id}, :class => 'action show') %>
+=======
+      <td><%= f.project %>&nbsp;</td>
+      <td class="actions">
+        <%= link_to("Show", {:action => 'show', :id => f.id}, :class => 'action show') %>
+
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
         <%= link_to("Delete", {:action => 'delete', :id => f.id}, data: { confirm: 'Are you sure?' }) %>
       </td>
     </tr>

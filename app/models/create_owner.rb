@@ -1,4 +1,8 @@
 class CreateOwner < ActiveRecord::Base
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 #attr_accessible :name, :floor, :block, :flat_number, :bussiness_name, :username, :password, :image, :carpet_area, :builtup_area, :mezzanine, :water_connection, :electricity, :owner, :month_from, :month_to, :per_month_rent 
 #validates :name, :presence => {:message => 'Name cannot be blank.'}, :allow_blank => true, :length => {:minimum => 2, :maximum => 40}
 #validates :floor, numericality: true
@@ -15,6 +19,12 @@ class CreateOwner < ActiveRecord::Base
 #validates :month_from, presence: true
 #validates :month_to, presence: true
 #validates :per_month_rent, numericality: true
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 
 mount_uploader :image, PictureUploader
 
@@ -35,4 +45,11 @@ def self.authenticate(username, password)
    nil
  end
 end
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5c38b89a3e635703a230a79470f46d5a9217ccf2
+>>>>>>> e7c0a9867ecf4d8dbb39fbffbbb79b2930d769d3
 end
